@@ -1,27 +1,56 @@
-# Next.js + Tailwind CSS Example
+<p align="center">
+  <img src="https://ik.imagekit.io/manuelalferez/ask-weather/logo_nOGe2gz6p.svg?updatedAt=1640953005090" alt="Logo" width="80">
+</p>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+<h3 align="center">Ask Weather</h3>
 
-## Preview
+<p align="center">
+  Check weather data for your city
+    <br />
+    <a href="https://github.com/manuelalferez/readme-template/wiki"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/manuelalferez/readme-template">View Demo</a>
+    ·
+    <a href="https://github.com/manuelalferez/readme-template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/manuelalferez/readme-template/issues">Request Feature</a>
+  </p>
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#License">License</a></li>
+  </ol>
+</details>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Description
 
-## Deploy your own
+A description of your project follows. A good description is clear, short, and to the point. Describe the importance of your project, and what it does.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Installation
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Installation is the next section in an effective README. Tell other users how to install your project locally. Optionally, include a gif to make the process even more clear for other people.
 
-## How to use
+## Usage
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+## Contributing
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for [setting guidelines for repository contributors](https://help.github.com/articles/setting-guidelines-for-repository-contributors/).
+
+## Contact
+
+Optional.
+
+## License
+
+Finally, include a section for the license of your project. For more information on choosing a license, check out GitHub’s [licensing guide](http://choosealicense.com/)!
+
+From https://guides.github.com/features/wikis/
