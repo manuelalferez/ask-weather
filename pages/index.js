@@ -22,7 +22,7 @@ export default function Home({ weather }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const { data } = await client.query({
     query: gql`
       query {
