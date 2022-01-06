@@ -31,14 +31,19 @@ export async function getServerSideProps() {
           name
           country
           coord {
-            lon
             lat
+            lon
           }
-          weather {
+          today {
             summary {
               title
               description
               icon
+              pressure
+              sunrise
+              sunset
+              humidity
+              visibility
             }
             temperature {
               actual
@@ -48,10 +53,26 @@ export async function getServerSideProps() {
             wind {
               speed
             }
-            clouds {
-              all
-              visibility
+            timestamp
+          }
+          lastSevenDays {
+            summary {
+              title
+              description
+              icon
+              pressure
+              sunrise
+              sunset
               humidity
+              visibility
+            }
+            temperature {
+              actual
+              min
+              max
+            }
+            wind {
+              speed
             }
             timestamp
           }
