@@ -74,6 +74,15 @@ You can always contact me via [Telegram](https://t.me/manuelalferez) if you want
 
 ## License
 
-Finally, include a section for the license of your project. For more information on choosing a license, check out GitHub’s [licensing guide](http://choosealicense.com/)!
+[GNU General Public License v3.0](https://github.com/manuelalferez/ask-weather/blob/main/LICENSE)
 
-From https://guides.github.com/features/wikis/
+### Permissions
+
+- Commercial use
+- Modification
+- Distribution
+- Patent use
+- Private use
+Private use
+
+
