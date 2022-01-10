@@ -7,14 +7,12 @@
 <p align="center">
   Check weather data for your city
     <br />
-    <a href="https://github.com/manuelalferez/readme-template/wiki"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/manuelalferez/readme-template">View Demo</a>
+    <a href="https://ask-weather.vercel.app/">Website</a>
     ·
-    <a href="https://github.com/manuelalferez/readme-template/issues">Report Bug</a>
+    <a href="https://github.com/manuelalferez/ask-weather/issues">Report Bug</a>
     ·
-    <a href="https://github.com/manuelalferez/readme-template/issues">Request Feature</a>
+    <a href="https://github.com/manuelalferez/ask-weather/issues">Request Feature</a>
   </p>
 
 <details open="open">
