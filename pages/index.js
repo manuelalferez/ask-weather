@@ -66,7 +66,16 @@ export default function Home() {
   const [query, setQuery] = useState(getWeather(city));
   const { loading, error, data } = useQuery(getWeather(query));
 
-  if (loading) return "Loading...";
+  if (loading)
+    return (
+      <div className="flex justify-center items-center text-3xl h-screen w-screen">
+        Loading
+        <img
+          src="https://ik.imagekit.io/300/0IyCDangboResources/Spin-1s-207px_YZH8Yxette.svg?updatedAt=1637828751533"
+          class="animate-spin h-10 w-10 mb-4"
+        />
+      </div>
+    );
   if (error) return `Error! ${error.message}`;
   const weather = data.getCityByName;
 
