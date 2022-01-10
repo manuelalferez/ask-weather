@@ -33,6 +33,9 @@ Weather App that fetches data from the API https://openweathermap.org/ and show 
 
 The GraphQL server is mounted at https://github.com/manuelalferez/graphql-weather-api and fetches from two endpoints: https://openweathermap.org/api/one-call-api and https://openweathermap.org/current. 
 
+<img width="1440" alt="Captura de pantalla 2022-01-10 a las 13 10 51" src="https://user-images.githubusercontent.com/38152841/148748828-93d75d8d-066b-49ea-a5b2-18f895771f2a.png">
+
+
 ## Installation
 
 
