@@ -58,10 +58,6 @@ Weather App that fetches data from the API https://openweathermap.org/ and show 
    npm run dev
    ```
 
-## Usage
-
-The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
-
 ## Contributing
 
 Any suggestions or improvement in the project? See the [CONTRIBUTING.md](https://github.com/manuelalferez/ask-weather/blob/master/CONTRIBUTING.md) file to see how you can contribute to the project.
