@@ -29,7 +29,9 @@
 
 ## Description
 
-Weather App that fetches data from the API https://openweathermap.org/ and show them for any location. For our example, using the city of Basel. However, we are not fetching the data directly from the API, we are using GraphQL to consume that data. The GraphQL server is mounted at https://github.com/manuelalferez/graphql-weather-api and fetches from two endpoints: https://openweathermap.org/api/one-call-api and https://openweathermap.org/current. 
+Weather App that fetches data from the API https://openweathermap.org/ and show them for any location. For our example, using the city of Basel. However, we are not fetching the data directly from the API, we are using GraphQL to consume that data. 
+
+The GraphQL server is mounted at https://github.com/manuelalferez/graphql-weather-api and fetches from two endpoints: https://openweathermap.org/api/one-call-api and https://openweathermap.org/current. 
 
 ## Installation
 
