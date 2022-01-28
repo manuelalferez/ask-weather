@@ -3,68 +3,67 @@ import { gql, useQuery } from "@apollo/client";
 import Weather from "../components/Weather";
 import { useState } from "react";
 
-const getWeather = (city) => {
-  return gql`
-    query {
-      getCityByName(name: "Basel") {
-        id
-        name
-        country
-        coord {
-          lat
-          lon
+const GET_WEATHER = gql`
+  query Weather($name: String!) {
+    getCityByName(name: $name) {
+      id
+      name
+      country
+      coord {
+        lat
+        lon
+      }
+      today {
+        summary {
+          title
+          description
+          icon
+          pressure
+          sunrise
+          sunset
+          humidity
+          visibility
         }
-        today {
-          summary {
-            title
-            description
-            icon
-            pressure
-            sunrise
-            sunset
-            humidity
-            visibility
-          }
-          temperature {
-            actual
-            min
-            max
-          }
-          wind {
-            speed
-          }
-          dt
+        temperature {
+          actual
+          min
+          max
         }
-        forecastNextDays {
-          summary {
-            title
-            description
-            icon
-            pressure
-            sunrise
-            sunset
-            humidity
-            visibility
-          }
-          temperature {
-            actual
-            min
-            max
-          }
-          wind {
-            speed
-          }
-          dt
+        wind {
+          speed
         }
+        dt
+      }
+      forecastNextDays {
+        summary {
+          title
+          description
+          icon
+          pressure
+          sunrise
+          sunset
+          humidity
+          visibility
+        }
+        temperature {
+          actual
+          min
+          max
+        }
+        wind {
+          speed
+        }
+        dt
       }
     }
-  `;
-};
+  }
+`;
 
 export default function Home() {
   const [city, setCity] = useState("Basel");
-  const [query, setQuery] = useState(getWeather(city));
-  const { loading, error, data } = useQuery(getWeather(query));
+  const { loading, error, data, refetch } = useQuery(GET_WEATHER, {
+    variables: { name: "Basel" },
+  });
 
   if (loading)
     return (
@@ -76,7 +75,7 @@ export default function Home() {
         />
       </div>
     );
-  if (error) return `Error! ${error.message}`;
+
   const weather = data.getCityByName;
 
   return (
@@ -90,6 +89,20 @@ export default function Home() {
       </Head>
 
       <main className="home w-screen h-screen md:flex md:flex-col md:items-center">
+        <form
+          onSubmit={async (e) => {
+            e.preventDefault();
+            () => refetch({ name: city });
+          }}
+        >
+          <input
+            type="text"
+            placeholder="Search.."
+            onChange={(e) => setCity(e.target.value)}
+          />
+          <button onClick={() => refetch({ name: city })}>Submit!</button>
+        </form>
+        {error && <div>City not found </div>}
         <Weather weather={weather} />
       </main>
     </div>
