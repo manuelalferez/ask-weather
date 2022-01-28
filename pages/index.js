@@ -94,16 +94,30 @@ export default function Home() {
             e.preventDefault();
             () => refetch({ name: city });
           }}
+          className="flex justify-center items-center"
         >
           <input
             type="text"
             placeholder="Search.."
             onChange={(e) => setCity(e.target.value)}
           />
-          <button onClick={() => refetch({ name: city })}>Submit!</button>
+          <button
+            onClick={() => refetch({ name: city })}
+            className="bg-myblue bg-opacity-80 rounded-full p-2 ml-2 h-10 w-10"
+          >
+            <img
+              className="w-6 h-6"
+              src="https://ik.imagekit.io/manuelalferez/ask-weather/search_8QGIbdPR5.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1643359729829"
+            ></img>
+          </button>
         </form>
-        {error && <div>City not found </div>}
-        <Weather weather={weather} />
+        {error && (
+          <div className="flex flex-col justify-center items-center mt-40">
+            <h1 className="text-xl">🇬🇧 City not found 😢</h1>
+            <h1 className="text-xl">🇪🇸 Ciudad no encontrada 😢</h1>
+          </div>
+        )}
+        {!error && <Weather weather={weather} />}
       </main>
     </div>
   );

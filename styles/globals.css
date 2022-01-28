@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .home input {
-  @apply border-2 w-10/12 px-8 h-12;
+  @apply border-2 w-48 px-8 h-12;
 }
