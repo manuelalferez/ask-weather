@@ -5,7 +5,7 @@ import Summary from "./Summary";
 export default function Weather({ weather }) {
   return (
     <div className="w-full h-full relative flex justify-center">
-      <div className="fixed z-10 md:max-w-2xl md:mx-auto">
+      <div className="z-10 md:max-w-2xl md:mx-auto">
         <Summary weather={weather} />
         <Details weather={weather} />
         <Forecast weather={weather} />

@@ -60,9 +60,9 @@ const GET_WEATHER = gql`
 `;
 
 export default function Home() {
-  const [city, setCity] = useState("Basel");
+  const [city, setCity] = useState("Madrid");
   const { loading, error, data, refetch } = useQuery(GET_WEATHER, {
-    variables: { name: "Basel" },
+    variables: { name: "Madrid" },
   });
 
   if (loading)
@@ -79,7 +79,7 @@ export default function Home() {
   const weather = data.getCityByName;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 overflow-hidden">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
         <title>Ask weather</title>
         <link
@@ -88,7 +88,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className="home w-screen h-screen md:flex md:flex-col md:items-center">
+      <main className="home w-screen h-screen md:flex md:flex-col md:items-center pt-24 md:pt-20 overflow-hidden">
         <form
           onSubmit={async (e) => {
             e.preventDefault();
